@@ -106,7 +106,16 @@
       height: 100%;
       background: #f5d755;
       border-radius: 4px;
-      transition: width 0.3s ease;
+      animation: progressAnimation 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes progressAnimation {
+      0% {
+        width: 20%;
+      }
+      100% {
+        width: 80%;
+      }
     }
 
     .contact-info {
